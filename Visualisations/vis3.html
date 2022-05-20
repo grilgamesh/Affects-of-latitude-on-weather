@@ -3,89 +3,96 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <title>Cloudiness</title>
+    <meta charset="UTF-8">
+    <title>Cloudiness</title>
 
-  <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../Assets/css/styles.css">
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/styles.css">
 </head>
 
 <body>
-  <ul class="nav nav-tabs justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="../index.html" >Home</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="vis1.html">Max Temperature</a></li>
-        <li><a class="dropdown-item" href="vis2.html">Humidity</a></li>
-        <li><a class="dropdown-item active" href="vis3.html">Cloudiness</a></li>
-        <li><a class="dropdown-item " href="vis4.html">Windspeed</a></li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../Comparisons.html">Comparisons</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="../Data.html">Data</a>
-    </li>
-  </ul>
-  
-  <button type="button" class="btn btn-primary">Cloudiness</button>
-
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      <u>=</u>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="../index.html">Home</a></li>
-      <li><a class="dropdown-item" href="../Comparisons.html">Comparisons</a></li>
-      <li><hr class="dropdown-divider"></li>  
-      <li><a class="dropdown-item " href="vis1.html">Max Temperature</a></li>
-      <li><a class="dropdown-item" href="vis2.html">Humidity</a></li>
-      <li><a class="dropdown-item active" href="vis3.html">Cloudiness</a></li>
-      <li><a class="dropdown-item" href="vis4.html">Windspeed</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="../Data.html">Data</a></li>
-  
+    <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="btn btn-warning dropdown-toggle" type="button" id="plot" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Plots
+  </a>
+            <div class="dropdown-menu" aria-labelledby="plot">
+                <a class="dropdown-item" href="vis1.html">Max Temperature</a>
+                <a class="dropdown-item" href="vis2.html">Humidity</a>
+                <a class="dropdown-item active" href="vis3.html">Cloudiness</a>
+                <a class="dropdown-item" href="vis4.html">Windspeed</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../Comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../Data.html">Data</a>
+        </li>
     </ul>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-12 col-lg-8 post">
-        <h1>Latitude against Cloudiness</h1>
-        <hr>
-        <img src="../Assets/images/3.png" alt="Latitude by Cloudiness" class="left" />
-        <p>When considering this chart for cloud cover, it has practically zero correlation.</p>
-        <p>We can definitely conclude that latitude is not a driving force behind cloud cover.</p>
-        <p>There are some interesting lines in the data, at or near multiples of 20. This is maybe due how the data are colelcted or estimated.</p>
-        <p>You can browse the results of our investigation using the links above or the thumbnails to the right.</p>
-      </div>
+    <div class="dropstart">
+        <a class="btn btn-secondary dropdown-toggle justify-content-end" type="button" id="minimenu" data-toggle="dropdown" aria-expanded="false">
+            <u>=</u>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="minimenu">
+            <li><a class="dropdown-item" href="../index.html">Home</a></li>
+            <li><a class="dropdown-item" href="../Comparisons.html">Comparisons</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="vis1.html">Max Temperature</a></li>
+            <li><a class="dropdown-item" href="vis2.html">Humidity</a></li>
+            <li><a class="dropdown-item active" href="vis3.html">Cloudiness</a></li>
+            <li><a class="dropdown-item" href="vis4.html">Windspeed</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="../Data.html">Data</a></li>
 
-      <div class="col-lg-4 col-md-4 col-sm-12  post">
-        <h2>Visualisations</h2>
-        <hr>
-        <figure>
-          <a href="../Visualisations/vis1.html"><img src="../Assets/images/1.png" alt="Temperature" class="thumbnail" /></a>
-          <a href="../Visualisations/vis2.html"><img src="../Assets/images/2.png" alt="Humidity" class="thumbnail" /></a>
-          <br />
-          <a href="../Visualisations/vis3.html"><img src="../Assets/images/3.png" alt="Cloudiness" class="thumbnail selected" /></a>
-          <a href="../Visualisations/vis4.html"><img src="../Assets/images/4.png" alt="Windspeed" class="thumbnail" /></a>
-          <figcaption>available visualisations</figcaption>
-      </figure>
-      </div>
+        </ul>
+    </div>
 
-  </div>
+    <button type="button" class="btn btn-primary">Cloudiness</button>
 
 
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-lg-8 post">
+                <h1>Latitude against Cloudiness</h1>
+                <hr>
+                <img src="../Assets/images/3.png" alt="Latitude by Cloudiness" class="left" />
+                <p>When considering this chart for cloud cover, it has practically zero correlation.</p>
+                <p>We can definitely conclude that latitude is not a driving force behind cloud cover.</p>
+                <p>There are some interesting lines in the data, at or near multiples of 20. This is maybe due how the data are colelcted or estimated.</p>
+                <p>You can browse the results of our investigation using the links above or the thumbnails to the right.</p>
+            </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <div class="col-lg-4 col-md-4 col-sm-12  post">
+                <h2>Visualisations</h2>
+                <hr>
+                <figure>
+                    <a href="../Visualisations/vis1.html"><img src="../Assets/images/1.png" alt="Temperature" class="thumbnail" /></a>
+                    <a href="../Visualisations/vis2.html"><img src="../Assets/images/2.png" alt="Humidity" class="thumbnail" /></a>
+                    <br />
+                    <a href="../Visualisations/vis3.html"><img src="../Assets/images/3.png" alt="Cloudiness" class="thumbnail selected" /></a>
+                    <a href="../Visualisations/vis4.html"><img src="../Assets/images/4.png" alt="Windspeed" class="thumbnail" /></a>
+                    <figcaption>available visualisations</figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
