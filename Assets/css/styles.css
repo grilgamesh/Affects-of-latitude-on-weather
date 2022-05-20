@@ -33,13 +33,10 @@ h3 {
   color: #000;
   text-align: center;
 }
-
-.btn-secondary{    
-  visibility: hidden
-  position: fixed;  
-  top: 2px;
-  right: 2px;
+.btn.btn-secondary{    
+  visibility: hidden;
 }
+
 .post {
   margin-top: 50px;  
   padding-left: 10px;
@@ -54,8 +51,11 @@ h3 {
     visibility: hidden
   }
   
-  .btn-secondary{
-    visibility: visible
+  .btn.btn-secondary{
+    visibility: visible; 
+    position: fixed;  
+    top: 2px;
+    left: 200px;
   }
 
   .navbar li {
