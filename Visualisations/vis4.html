@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Windspeed</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Assets/css/styles.css">
+</head>
+
+<body>
+  <ul class="nav nav-tabs justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="../index.html" >Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+        <li><a class="dropdown-item" href="#">Humidity</a></li>
+        <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+        <li><a class="dropdown-item active" href="#">Windspeed</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../Comparisons.html">Comparisons</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../Data.html">Data</a>
+    </li>
+  </ul>
+  
+  <button type="button" class="btn btn-primary">Windspeed</button>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-lg-8 post">
+        <h1>Latitude against Windspeed</h1>
+        <hr>
+        <img src="../Assets/images/4.png" alt="Latitude by Windspeed" class="left" />
+        <p>Clearly there is very little to no correlation in this chart. We can conclude that latitude does not have an impact on the observed windspeed of a city.</p>
+        <p>You can browse the results of our investigation using the links above or the thumbnails to the right.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12  post">
+        <h2>Visualisations</h2>
+        <hr>
+        <figure>
+          <a href="../Visualisations/vis1.html"><img src="../Assets/images/1.png" alt="Temperature" class="thumbnail" /></a>
+          <a href="../Visualisations/vis2.html"><img src="../Assets/images/2.png" alt="Humidity" class="thumbnail" /></a>
+          <br />
+          <a href="../Visualisations/vis3.html"><img src="../Assets/images/3.png" alt="Cloudiness" class="thumbnail" /></a>
+          <a href="../Visualisations/vis4.html"><img src="../Assets/images/4.png" alt="Windspeed" class="thumbnail selected" /></a>
+          <figcaption>available visualisations</figcaption>
+      </figure>
+      </div>
+
+  </div>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
