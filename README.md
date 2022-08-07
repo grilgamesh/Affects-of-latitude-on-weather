@@ -1,6 +1,6 @@
 Weather visualisations
 
-https://grilgamesh.github.io/Web-Design-Challenge/index.html
+https://grilgamesh.github.io/Affects-of-latitude-on-weather/
 
 A series of interlinked websites that showcase the weather visualisations from the Python API project. 
 
